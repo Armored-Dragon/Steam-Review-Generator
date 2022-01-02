@@ -1,0 +1,50 @@
+body {
+	background-color: #1b2838;
+}
+
+.control-panel {
+	color: white;
+}
+
+.review-container {
+	background-color: #16202d;
+	margin: 50px auto auto auto;
+	width: 600px;
+	min-height: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	color: white;
+
+	.rating-container {
+		width: 100%;
+		background-color: #121a24;
+
+		display: flex;
+
+		img {
+			height: 50px;
+			width: 50px;
+		}
+
+		.rating-detail {
+			margin-left: 10px;
+			padding: 2px;
+			box-sizing: border-box;
+
+			.title {
+				font-size: 1.25em;
+			}
+			.hours-played {
+				color: #8091a2;
+				font-size: 0.8em;
+			}
+		}
+	}
+
+	.date-container {
+		margin-top: 15px;
+		margin-bottom: 10px;
+		color: #8091a2;
+		font-size: 0.8em;
+	}
+}
