@@ -1,6 +1,6 @@
- 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,26 +9,47 @@
   <link rel="shortcut icon" type="image/png" href="/Steam-Review-Generator/img/thumbsup.ico">
   <title>Steam Review Generator</title>
 </head>
+
 <body>
-  
   <div class='control-panel'>
-    <button id='recommend'>Recommend</button>
-    <button id='not-recommended'>Not-Recommended</button>
-    <div>Hours played <input id='hours-played-input' type='number'> </div>
-    <div>Posted date <input id='date-posted-input'  type='date'> </div>
-    <div>Review contents <textarea id='review-input' type='text'> </textarea>
+    <div class='hamburbur'>Menu</div>
+    <div class='options'>
+      <div class='option'>
+        <div class='name'>Review Type</div>
+        <button id='recommend'>Recommend</button>
+      <button id='not-recommended'>Not-Recommended</button>
+      </div>
+      <div class='option'>
+        <div class='name'>Hours Played</div>
+        <input id='hours-played-input' type='number'>
+      </div>
+      <div class='option'>
+        <div class='name'>Date Posted</div>
+        <input id='date-posted-input' type='date'>
+      </div>
+      <div class='option'>
+        <div class='name'>Review Message</div>
+        <textarea id='review-input' type='text'></textarea>
+      </div>
+    </div>
   </div>
   <div class='review-container'>
     <div class='rating-container'>
       <img id='review-icon' src='/Steam-Review-Generator/img/thumbsup.png'>
       <div class='rating-detail'>
         <div id='review-title' class='title'>Recommended</div>
-        <div class='hours-played'><span id='hoursplayed'>0.01</span> hrs on record</div>
+        <div class='hours-played'>
+          <span id='hoursplayed'>0.01</span>
+          hrs on record
+        </div>
       </div>
     </div>
-    <div class='date-container'>POSTED  <span id='date'>DECEMBER 2, 1982</span></div>
+    <div class='date-container'>POSTED
+      <span id='date'>DECEMBER 2, 1982</span>
+    </div>
     <div id='review' class='text-container'>This is my option on this game!</div>
   </div>
 </body>
 <script src='/Steam-Review-Generator/js/index.js'></script>
+
 </html>

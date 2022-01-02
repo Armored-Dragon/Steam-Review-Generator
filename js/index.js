@@ -8,10 +8,10 @@ qs('#review-input').addEventListener('keyup', (element) => updateData('review', 
 
 function changeRecommendState(state) {
 	if (state) {
-		qs('#review-icon').src = '/img/thumbsup.png';
+		qs('#review-icon').src = '/Steam-Review-Generator/img/thumbsup.png';
 		qs('#review-title').innerText = 'Recommended';
 	} else {
-		qs('#review-icon').src = '/img/thumbsdown.png';
+		qs('#review-icon').src = '/Steam-Review-Generator/img/thumbsdown.png';
 		qs('#review-title').innerText = 'Not Recommended';
 	}
 }

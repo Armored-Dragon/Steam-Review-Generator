@@ -3,7 +3,74 @@ body {
 }
 
 .control-panel {
+  height: 25px;
+  width: 300px;
   color: white;
+  position: fixed;
+  overflow-y: hidden;
+  text-align: center;
+}
+
+.control-panel .hamburbur {
+  height: 25px;
+  width: auto;
+}
+
+.control-panel .options {
+  height: 0px;
+  width: 0px;
+  display: none;
+}
+
+.control-panel .options .option {
+  margin: 10px auto 10px auto;
+  background-color: #121a24;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  border-radius: 5px;
+  height: auto;
+}
+
+.control-panel .options .option .name {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  margin-bottom: 5px;
+}
+
+.control-panel .options .option button {
+  width: 100%;
+}
+
+.control-panel .options .option input, .control-panel .options .option textarea {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  resize: vertical;
+}
+
+.control-panel:hover {
+  height: inherit;
+  min-height: 300px;
+  min-width: 300px;
+}
+
+.control-panel:hover .hamburbur {
+  display: none;
+}
+
+.control-panel:hover .options {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: block;
 }
 
 .review-container {
